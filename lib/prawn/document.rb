@@ -280,6 +280,7 @@ module Prawn
       use_graphic_settings(options[:template])
 
       unless options[:orphan]
+        state.page.dictionary.data[:Parent] = last_page.dictionary.data[:Parent] if last_page
         state.insert_page(state.page, @page_number)
         @page_number += 1
 
