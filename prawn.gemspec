@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = "prawn"
-  spec.version = File.read(File.expand_path('VERSION', File.dirname(__FILE__))).strip
+  spec.version = '1.0.0.rc2'
   spec.platform = Gem::Platform::RUBY
   spec.summary = "A fast and nimble PDF generator for Ruby"
   spec.files =  Dir.glob("{examples,lib,spec,data,manual}/**/**/*") +
